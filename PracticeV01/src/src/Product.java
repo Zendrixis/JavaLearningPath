@@ -2,10 +2,10 @@ package src;
 
 public class Product {
 
-	public String name;
-	public int number;
-	public int quantity;
-	public int price;
+	private String name;
+	private int number;
+	private int quantity;
+	private int price;
 	boolean status;
 
 	Product(String n,int g,int i,int j){
