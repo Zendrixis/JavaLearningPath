@@ -6,11 +6,11 @@ public class Fish {
 	private String friendlinessEvo;
 
 	public Fish() {
-		typeOfFish = "Unknown";
+		typeOfFish = "Unknown"; // constructor
 		friendliness = 3;
 
 	}
-	public Fish(String t, int f) {
+	public Fish(String t, int f) { //constructor
 		this.typeOfFish = t;
 		this.friendliness = f;
 
@@ -44,7 +44,7 @@ public class Fish {
 	}
 	
 
-	    public static Fish nicestFish(Fish f1, Fish f2)
+	    public static Fish nicestFish(Fish f1, Fish f2) // compares two fishes friendliness level and return bigger.
 	    { 
 	        if(f1.friendliness > f2.friendliness) {
 	        	return f1;

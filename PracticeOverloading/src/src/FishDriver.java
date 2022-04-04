@@ -4,9 +4,13 @@ import java.util.Scanner;
 public class FishDriver {
 
 	public static void main(String[] args) {
+		Scanner objNum = new Scanner(System.in);
+		System.out.println("Please enter how many objects you wish to create");
+		int objNum1 = objNum.nextInt();
 
-		Fish[] nicest = new Fish[3];
-
+		Fish[] nicest = new Fish[objNum1];
+		
+        // creating objects and assign to the array
 		for(int i = 0;i<nicest.length;i++) {
 			Scanner name = new Scanner(System.in);
 			System.out.println("Please enter fishs name:");
@@ -30,16 +34,10 @@ public class FishDriver {
 			nicest[i] = Fish.nicestFish(amber,james);
 			System.out.println(nicest[i]);
 		}
-
+       
+		//iterate trough array of objects
 		for(int j=0;j<nicest.length;j++) {
-
-			for(int g=1;g<nicest.length;g++) {
-				if(nicest[j].getFriendliness()>nicest[g].getFriendliness()) {
-					System.out.println(nicest[j]);
-				}
-			}
-
-
+			System.out.println(nicest[j]);
 		}
 
 	}
