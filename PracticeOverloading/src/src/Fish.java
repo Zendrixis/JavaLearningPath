@@ -43,10 +43,21 @@ public class Fish {
 		return this.friendlinessEvo;
 	}
 	
+
+	    public static Fish nicestFish(Fish f1, Fish f2)
+	    { 
+	        if(f1.friendliness > f2.friendliness) {
+	        	return f1;
+	        }else {
+	        	return f2;
+	        }
+	    }
+
 	
 	public String toString() {
 		return "Fish type "+this.typeOfFish
-				+"\nFriendliness: "+getFriendliness1();
+				+"\nFriendliness Level: "+getFriendliness()
+				+"\nFriendliness Status: "+getFriendliness1();
 	}
 	
 }
